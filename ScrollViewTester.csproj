@@ -119,6 +119,10 @@
     <Compile Include="CustomScrollView.designer.cs">
       <DependentUpon>CustomScrollView.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomButton.cs" />
+    <Compile Include="CustomButton.designer.cs">
+      <DependentUpon>CustomButton.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

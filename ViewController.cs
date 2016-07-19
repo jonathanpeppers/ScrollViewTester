@@ -15,10 +15,26 @@ namespace ScrollViewTester
         {
             base.ViewDidLoad();
 
-            _scrollView.MaximumZoomScale = 1;
-            _scrollView.MinimumZoomScale = 0.25f;
-            _scrollView.MultipleTouchEnabled = true;
-            _scrollView.ViewForZoomingInScrollView = _ => _container;
+            var button = new CustomButton();
+            var frame = button.Frame;
+            frame.X = 50;
+            frame.Y = 50;
+            button.Frame = frame;
+            _scrollView.AddSubview(button);
+
+            button = new CustomButton();
+            frame = button.Frame;
+            frame.X = 0;
+            frame.Y = 250;
+            button.Frame = frame;
+            _scrollView.AddSubview(button);
+
+            button = new CustomButton();
+            frame = button.Frame;
+            frame.X = 50;
+            frame.Y = 450;
+            button.Frame = frame;
+            _scrollView.AddSubview(button);
         }
     }
 }
